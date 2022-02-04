@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha(){
+		document.write("<br><br>");
+	}
+
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var salario = parseInt(prompt("Ente com o valor do salário: "));
+ 	mostra("O salário digitado foi: " + salario);
+
+ 	if(salario == 250){
+ 		mostra("Acertou o salário de R$ 250,00");
+ 	}else{
+ 		mostra("Não acertou o salário de R$ 250,00");
+ 	}
+ 
+ 		mostra("Fim do salário");
+
+</script>

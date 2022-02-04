@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+	
+function pulaLinha(){
+	document.write("<br>");
+	document.write("<br>");
+	
+}
+
+function mostra(frase){
+	document.write(frase);
+	pulaLinha();
+}
+
+function somar(numero1, numero2, numero3, numero4, numero5){
+return (numero1 + numero2 + numero3 + numero4) /5;
+}
+
+alert("Vamos Calcular a média de cinco número?:-) ");
+
+var nome = prompt("informe o seu nome: ");
+var numero1Digitado = parseInt(prompt(nome + " informe o 1º número"));
+var numero2Digitado = parseInt(prompt(nome + " informe o 2º número"));
+var numero3Digitado = parseInt(prompt(nome + " informe o 3º número"));
+var numero4Digitado = parseInt(prompt(nome + " informe o 4º número"));
+var numero5Digitado = parseInt(prompt(nome + " informe o 5º número"));
+
+var resultadoTotal = somar(numero1Digitado, numero2Digitado, numero3Digitado, numero4Digitado, numero5Digitado);
+
+mostra(nome + " a média dos cinco números digitados dá: " + resultadoTotal);
+mostra("FIM da média...")
+
+
+</script>

@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    var nome = prompt("Entre com seu nome:");
+    var idade = parseInt(prompt(nome + ", Qual é sua idade?"));
+    var temCarteira = prompt(nome + ", Tem carteira? Responda S ou N");
+
+    if(idade >= 18 && temCarteira == "S"){
+            mostra(nome+ ", você Pode dirigir");
+        }else{
+            mostra(nome +", Não pode dirigir");
+        }
+
+        
+</script>
